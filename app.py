@@ -103,4 +103,4 @@ st.dataframe(team_per_game_display)
 # color="player:N"
 # )
 
-st.altair_chart(chart + avg_lines, width='stretch')
+# st.altair_chart(chart + avg_lines, width='stretch')
