@@ -77,8 +77,12 @@ for file in glob.glob(os.path.join(DATA_FOLDER, "*.csv")):
 # combine everything
 master_df = pd.concat(all_games, ignore_index=True)
 
+# remove first 3 characters from each player name
+master_df["player"] = master_df["player"].astype(str).str[3:]
+
 # save
 master_df.to_csv(OUTPUT_FILE, index=False)
+
 
 print(f"Saved {len(master_df)} rows to {OUTPUT_FILE}")
 

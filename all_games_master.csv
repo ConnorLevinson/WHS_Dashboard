@@ -1,209 +1,209 @@
 player,oreb,dreb,foul,stl,to,blk,asst,pts,dnp,fgm,fga,3pm,3pa,ftm,fta,game_date,location,opponent
- #1 C. Hall,4,4,0,3,4,1,1,9,False,3,9,0,2,3,8,2025-12-05,away,GovThomasJohnson
- #1 J. Abreu,0,2,0,1,3,0,1,8,False,2,9,1,5,3,7,2025-12-05,away,GovThomasJohnson
- #1 C. Yinger,0,5,0,1,1,0,1,8,False,3,9,2,7,0,0,2025-12-05,away,GovThomasJohnson
- #1 E. Rhyne,1,2,0,0,0,0,1,5,False,2,4,0,0,1,1,2025-12-05,away,GovThomasJohnson
- #1 B. Rankin,1,3,0,0,2,0,0,4,False,1,2,0,0,2,2,2025-12-05,away,GovThomasJohnson
- #1 E. Dejesus,1,3,0,3,2,0,2,2,False,1,6,0,3,0,0,2025-12-05,away,GovThomasJohnson
- #1 K. Johnson,0,1,0,1,0,1,0,2,False,1,3,0,0,0,0,2025-12-05,away,GovThomasJohnson
- #1 R. Messier,0,3,0,0,4,0,1,0,False,0,1,0,1,0,0,2025-12-05,away,GovThomasJohnson
- #1 N. Gabriel,0,0,0,0,0,0,0,0,False,0,1,0,0,0,0,2025-12-05,away,GovThomasJohnson
- #1 H. Mollman,0,0,0,0,0,0,0,0,False,0,0,0,0,0,0,2025-12-05,away,GovThomasJohnson
- #1 J. Constantine,0,0,0,0,0,0,0,0,False,0,0,0,0,0,0,2025-12-05,away,GovThomasJohnson
- #1 G. Tittle,0,0,0,0,0,0,0,0,False,0,1,0,1,0,0,2025-12-05,away,GovThomasJohnson
- #1 G. Palazzo,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2025-12-05,away,GovThomasJohnson
- #1 B. Novotny,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2025-12-05,away,GovThomasJohnson
- #1 O. Arceo,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2025-12-05,away,GovThomasJohnson
- #1 D. Harris,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2025-12-05,away,GovThomasJohnson
- #1 J. Abreu,1,2,0,2,3,0,0,10,False,3,14,3,10,1,2,2025-12-09,home,Urbana
- #1 C. Hall,1,3,0,5,1,0,2,9,False,3,12,1,7,2,3,2025-12-09,home,Urbana
- #1 N. Gabriel,1,0,0,3,1,0,2,7,False,3,5,1,3,0,0,2025-12-09,home,Urbana
- #1 E. Rhyne,2,2,0,0,1,0,1,3,False,0,2,0,0,3,4,2025-12-09,home,Urbana
- #1 K. Johnson,1,0,0,0,0,0,0,2,False,1,1,0,0,0,0,2025-12-09,home,Urbana
- #1 B. Rankin,2,2,0,1,1,0,0,2,False,1,3,0,1,0,0,2025-12-09,home,Urbana
- #1 C. Yinger,0,2,0,4,1,0,1,2,False,1,4,0,3,0,0,2025-12-09,home,Urbana
- #1 E. Dejesus,1,0,0,1,0,0,1,0,False,0,4,0,3,0,0,2025-12-09,home,Urbana
- #1 O. Arceo,0,0,0,0,0,0,0,0,False,0,0,0,0,0,0,2025-12-09,home,Urbana
- #1 R. Messier,2,1,0,1,1,0,0,0,False,0,4,0,3,0,0,2025-12-09,home,Urbana
- #1 H. Mollman,0,0,0,0,0,0,0,0,False,0,0,0,0,0,0,2025-12-09,home,Urbana
- #1 B. Novotny,0,1,0,0,2,0,0,0,False,0,0,0,0,0,0,2025-12-09,home,Urbana
- #1 G. Tittle,0,0,0,0,1,0,0,0,False,0,1,0,1,0,0,2025-12-09,home,Urbana
- #1 G. Palazzo,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2025-12-09,home,Urbana
- #1 J. Constantine,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2025-12-09,home,Urbana
- #1 D. Harris,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2025-12-09,home,Urbana
- #1 C. Hall,7,3,0,0,1,0,1,11,False,5,14,1,4,0,2,2025-12-15,home,SC
- #1 J. Abreu,0,1,0,1,1,0,1,10,False,3,5,2,4,2,2,2025-12-15,home,SC
- #1 C. Yinger,3,3,0,2,2,1,3,6,False,2,6,0,1,2,2,2025-12-15,home,SC
- #1 B. Rankin,1,3,0,0,0,0,0,4,False,2,2,0,0,0,0,2025-12-15,home,SC
- #1 G. Tittle,0,1,0,0,0,0,0,3,False,1,3,1,3,0,0,2025-12-15,home,SC
- #1 H. Mollman,0,2,0,0,2,0,0,2,False,1,2,0,0,0,0,2025-12-15,home,SC
- #1 N. Gabriel,0,0,0,1,0,0,0,2,False,0,0,0,0,2,2,2025-12-15,home,SC
- #1 B. Novotny,1,1,0,0,2,0,0,2,False,1,3,0,0,0,0,2025-12-15,home,SC
- #1 E. Rhyne,1,2,0,2,1,1,0,2,False,1,3,0,0,0,2,2025-12-15,home,SC
- #1 K. Johnson,1,3,0,0,1,0,0,2,False,1,2,0,0,0,0,2025-12-15,home,SC
- #1 J. Constantine,1,0,0,1,1,0,0,2,False,1,2,0,0,0,0,2025-12-15,home,SC
- #1 D. Harris,0,2,0,0,1,0,0,0,False,0,1,0,1,0,0,2025-12-15,home,SC
- #1 O. Arceo,0,0,0,0,0,0,0,0,False,0,0,0,0,0,0,2025-12-15,home,SC
- #1 E. Dejesus,0,3,0,0,0,0,1,0,False,0,2,0,2,0,0,2025-12-15,home,SC
- #1 R. Messier,1,2,0,2,2,0,1,0,False,0,3,0,2,0,0,2025-12-15,home,SC
- #1 G. Palazzo,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2025-12-15,home,SC
- #1 J. Abreu,0,1,0,3,1,0,0,20,False,6,14,4,9,4,4,2025-12-17,home,Century
- #1 C. Hall,0,1,0,2,4,0,1,5,False,2,7,0,3,1,2,2025-12-17,home,Century
- #1 B. Rankin,3,1,0,0,1,0,0,4,False,1,2,0,0,2,2,2025-12-17,home,Century
- #1 C. Yinger,5,3,0,0,0,0,1,2,False,1,4,0,2,0,0,2025-12-17,home,Century
- #1 R. Messier,3,3,0,2,1,0,0,0,False,0,5,0,2,0,0,2025-12-17,home,Century
- #1 E. Dejesus,2,1,0,1,1,0,1,0,False,0,4,0,3,0,0,2025-12-17,home,Century
- #1 K. Johnson,0,1,0,0,0,0,0,0,False,0,1,0,0,0,0,2025-12-17,home,Century
- #1 H. Mollman,1,1,0,0,1,0,0,0,False,0,1,0,1,0,0,2025-12-17,home,Century
- #1 N. Gabriel,0,0,0,0,0,0,0,0,False,0,0,0,0,0,0,2025-12-17,home,Century
- #1 E. Rhyne,1,1,0,0,1,0,0,0,False,0,5,0,1,0,0,2025-12-17,home,Century
- #1 G. Tittle,0,1,0,0,1,0,0,0,False,0,0,0,0,0,0,2025-12-17,home,Century
- #1 O. Arceo,0,0,0,0,0,0,0,0,False,0,1,0,0,0,0,2025-12-17,home,Century
- #1 J. Constantine,0,0,0,0,0,0,0,0,False,0,0,0,0,0,0,2025-12-17,home,Century
- #1 D. Harris,0,0,0,0,0,0,0,0,False,0,0,0,0,0,0,2025-12-17,home,Century
- #1 B. Novotny,0,0,0,0,0,0,0,0,False,0,0,0,0,0,0,2025-12-17,home,Century
- #1 G. Palazzo,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2025-12-17,home,Century
- #1 C. Hall,1,3,0,2,2,1,2,16,False,6,13,3,4,1,2,2025-12-19,away,Liberty
- #1 E. Rhyne,0,4,0,0,2,0,2,7,False,3,4,0,0,1,2,2025-12-19,away,Liberty
- #1 C. Yinger,3,0,0,0,0,0,1,7,False,3,7,1,3,0,0,2025-12-19,away,Liberty
- #1 J. Abreu,1,1,0,2,0,0,4,5,False,2,9,1,4,0,0,2025-12-19,away,Liberty
- #1 E. Dejesus,1,0,0,1,2,0,0,5,False,1,5,1,4,2,4,2025-12-19,away,Liberty
- #1 K. Johnson,2,0,0,2,0,0,0,5,False,1,1,0,0,3,4,2025-12-19,away,Liberty
- #1 B. Rankin,3,3,0,2,0,1,0,3,False,1,5,0,1,1,3,2025-12-19,away,Liberty
- #1 R. Messier,2,3,0,0,1,0,0,2,False,1,2,0,0,0,5,2025-12-19,away,Liberty
- #1 N. Gabriel,0,0,0,0,0,0,1,2,False,0,0,0,0,2,2,2025-12-19,away,Liberty
- #1 H. Mollman,0,0,0,0,0,0,0,0,False,0,1,0,0,0,2,2025-12-19,away,Liberty
- #1 J. Constantine,0,0,0,0,0,0,0,0,False,0,0,0,0,0,0,2025-12-19,away,Liberty
- #1 D. Harris,0,0,0,0,0,0,0,0,False,0,0,0,0,0,0,2025-12-19,away,Liberty
- #1 B. Novotny,0,0,0,0,0,0,0,0,False,0,0,0,0,0,0,2025-12-19,away,Liberty
- #1 G. Tittle,0,0,0,0,0,0,0,0,False,0,0,0,0,0,0,2025-12-19,away,Liberty
- #1 G. Palazzo,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2025-12-19,away,Liberty
- #1 O. Arceo,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2025-12-19,away,Liberty
- #1 C. Hall,0,0,0,3,1,0,1,11,False,3,10,1,4,4,7,2025-12-29,away,WM
- #1 J. Abreu,0,2,0,1,3,0,2,7,False,3,9,1,5,0,0,2025-12-29,away,WM
- #1 B. Rankin,4,2,0,3,2,0,0,7,False,3,6,1,2,0,0,2025-12-29,away,WM
- #1 R. Messier,0,1,0,2,0,0,2,5,False,2,5,1,1,0,0,2025-12-29,away,WM
- #1 J. Constantine,4,1,0,0,0,0,0,4,False,2,5,0,0,0,2,2025-12-29,away,WM
- #1 C. Yinger,0,1,0,1,0,0,0,3,False,1,3,1,2,0,0,2025-12-29,away,WM
- #1 E. Rhyne,3,4,0,0,1,0,0,3,False,1,3,0,0,1,2,2025-12-29,away,WM
- #1 B. Novotny,2,1,0,0,1,0,0,2,False,1,5,0,0,0,0,2025-12-29,away,WM
- #1 H. Mollman,0,2,0,1,0,0,0,1,False,0,0,0,0,1,2,2025-12-29,away,WM
- #1 E. Dejesus,0,3,0,0,1,0,1,0,False,0,6,0,3,0,0,2025-12-29,away,WM
- #1 N. Gabriel,0,1,0,0,1,0,0,0,False,0,1,0,0,0,0,2025-12-29,away,WM
- #1 K. Johnson,0,0,0,0,0,0,2,0,False,0,2,0,0,0,0,2025-12-29,away,WM
- #1 G. Tittle,0,0,0,0,0,0,0,0,False,0,1,0,1,0,0,2025-12-29,away,WM
- #1 D. Harris,0,1,0,1,0,0,0,0,False,0,0,0,0,0,0,2025-12-29,away,WM
- #1 G. Palazzo,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2025-12-29,away,WM
- #1 O. Arceo,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2025-12-29,away,WM
- #1 C. Hall,0,3,0,6,4,0,0,15,False,2,11,1,8,10,12,2025-12-30,unknown,MV
- #1 C. Yinger,5,4,0,1,2,0,0,8,False,2,9,0,1,4,4,2025-12-30,unknown,MV
- #1 J. Abreu,1,0,0,0,1,0,6,6,False,2,13,0,7,2,4,2025-12-30,unknown,MV
- #1 E. Dejesus,2,1,0,1,0,0,1,3,False,1,3,1,2,0,0,2025-12-30,unknown,MV
- #1 H. Mollman,1,0,0,0,0,0,0,3,False,1,3,1,2,0,0,2025-12-30,unknown,MV
- #1 B. Rankin,2,3,0,1,2,0,0,2,False,1,4,0,0,0,0,2025-12-30,unknown,MV
- #1 R. Messier,0,2,0,1,1,0,0,2,False,1,3,0,2,0,0,2025-12-30,unknown,MV
- #1 N. Gabriel,1,0,0,0,0,0,0,0,False,0,3,0,3,0,0,2025-12-30,unknown,MV
- #1 E. Rhyne,3,2,0,0,1,2,0,0,False,0,0,0,0,0,0,2025-12-30,unknown,MV
- #1 J. Constantine,0,0,0,0,0,0,0,0,False,0,0,0,0,0,0,2025-12-30,unknown,MV
- #1 K. Johnson,0,1,0,0,0,0,0,0,False,0,0,0,0,0,0,2025-12-30,unknown,MV
- #1 G. Tittle,0,0,0,0,0,0,0,0,False,0,1,0,1,0,0,2025-12-30,unknown,MV
- #1 G. Palazzo,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2025-12-30,unknown,MV
- #1 B. Novotny,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2025-12-30,unknown,MV
- #1 O. Arceo,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2025-12-30,unknown,MV
- #1 D. Harris,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2025-12-30,unknown,MV
- #1 C. Hall,0,4,0,4,3,0,2,15,False,6,14,0,2,3,4,2026-01-09,home,MV
- #1 J. Abreu,2,3,0,4,4,0,3,13,False,6,18,1,5,0,3,2026-01-09,home,MV
- #1 C. Yinger,2,4,0,2,1,0,1,9,False,4,6,1,1,0,0,2026-01-09,home,MV
- #1 E. Rhyne,3,2,0,0,1,0,0,6,False,3,6,0,0,0,0,2026-01-09,home,MV
- #1 R. Messier,1,3,0,1,1,0,0,3,False,1,1,1,1,0,2,2026-01-09,home,MV
- #1 K. Johnson,2,2,0,1,0,0,1,2,False,0,1,0,0,2,6,2026-01-09,home,MV
- #1 J. Constantine,2,3,0,0,1,0,1,2,False,1,4,0,0,0,0,2026-01-09,home,MV
- #1 B. Rankin,4,1,0,0,1,0,0,1,False,0,3,0,2,1,2,2026-01-09,home,MV
- #1 E. Dejesus,2,0,0,0,0,0,3,0,False,0,4,0,2,0,0,2026-01-09,home,MV
- #1 N. Gabriel,0,1,0,2,1,0,2,0,False,0,1,0,0,0,0,2026-01-09,home,MV
- #1 H. Mollman,0,0,0,0,0,0,0,0,False,0,0,0,0,0,0,2026-01-09,home,MV
- #1 D. Harris,0,0,0,0,0,0,0,0,False,0,0,0,0,0,0,2026-01-09,home,MV
- #1 B. Novotny,1,0,0,0,0,0,0,0,False,0,0,0,0,0,0,2026-01-09,home,MV
- #1 G. Tittle,0,0,0,0,0,0,0,0,False,0,1,0,1,0,0,2026-01-09,home,MV
- #1 G. Palazzo,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2026-01-09,home,MV
- #1 O. Arceo,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2026-01-09,home,MV
- #1 C. Yinger,3,1,0,2,1,0,1,17,False,7,10,3,3,0,0,2026-01-12,home,FSK
- #1 E. Rhyne,3,3,0,1,1,0,1,12,False,6,8,0,0,0,1,2026-01-12,home,FSK
- #1 J. Abreu,0,3,0,0,1,0,3,9,False,3,7,3,6,0,0,2026-01-12,home,FSK
- #1 K. Johnson,1,1,0,4,2,0,1,6,False,3,4,0,0,0,0,2026-01-12,home,FSK
- #1 B. Rankin,2,1,0,2,0,1,0,6,False,3,5,0,2,0,1,2026-01-12,home,FSK
- #1 N. Gabriel,1,1,0,2,0,0,3,4,False,2,6,0,2,0,2,2026-01-12,home,FSK
- #1 C. Hall,0,6,0,0,1,0,1,3,False,1,6,1,2,0,0,2026-01-12,home,FSK
- #1 H. Mollman,0,0,0,0,0,0,0,2,False,1,1,0,0,0,0,2026-01-12,home,FSK
- #1 R. Messier,3,0,0,1,0,0,2,0,False,0,5,0,2,0,0,2026-01-12,home,FSK
- #1 E. Dejesus,1,3,0,0,1,0,2,0,False,0,3,0,2,0,0,2026-01-12,home,FSK
- #1 J. Constantine,2,1,0,2,2,0,0,0,False,0,1,0,1,0,0,2026-01-12,home,FSK
- #1 G. Tittle,0,0,0,1,0,0,0,0,False,0,3,0,2,0,0,2026-01-12,home,FSK
- #1 D. Harris,0,0,0,0,0,0,0,0,False,0,1,0,1,0,0,2026-01-12,home,FSK
- #1 B. Novotny,0,0,0,0,0,0,0,0,False,0,0,0,0,0,0,2026-01-12,home,FSK
- #1 G. Palazzo,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2026-01-12,home,FSK
- #1 O. Arceo,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2026-01-12,home,FSK
- #1 J. Abreu,1,0,0,0,0,0,1,14,False,5,8,4,7,0,1,2026-01-14,home,Gerstell
- #1 C. Hall,0,1,0,2,2,0,2,14,False,6,10,1,2,1,1,2026-01-14,home,Gerstell
- #1 N. Gabriel,1,1,0,1,0,0,0,8,False,3,6,2,3,0,0,2026-01-14,home,Gerstell
- #1 K. Johnson,1,3,0,2,0,0,6,8,False,4,8,0,0,0,0,2026-01-14,home,Gerstell
- #1 E. Dejesus,1,3,0,0,1,0,2,5,False,2,4,1,2,0,0,2026-01-14,home,Gerstell
- #1 D. Harris,1,2,0,0,4,0,1,4,False,2,4,0,0,0,0,2026-01-14,home,Gerstell
- #1 H. Mollman,1,1,0,0,0,0,0,4,False,2,3,0,0,0,0,2026-01-14,home,Gerstell
- #1 R. Messier,3,3,0,1,1,0,1,4,False,2,3,0,0,0,0,2026-01-14,home,Gerstell
- #1 B. Rankin,1,1,0,1,0,0,1,3,False,1,1,1,1,0,0,2026-01-14,home,Gerstell
- #1 G. Tittle,0,0,0,0,0,0,0,3,False,1,2,1,2,0,0,2026-01-14,home,Gerstell
- #1 C. Yinger,2,2,0,0,1,0,2,2,False,1,4,0,1,0,0,2026-01-14,home,Gerstell
- #1 E. Rhyne,4,3,0,1,1,1,1,0,False,0,2,0,0,0,0,2026-01-14,home,Gerstell
- #1 B. Novotny,1,6,0,0,2,0,0,0,False,0,1,0,0,0,0,2026-01-14,home,Gerstell
- #1 J. Constantine,3,1,0,1,1,0,0,0,False,0,5,0,1,0,0,2026-01-14,home,Gerstell
- #1 G. Palazzo,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2026-01-14,home,Gerstell
- #1 O. Arceo,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2026-01-14,home,Gerstell
- #1 C. Hall,0,1,0,6,4,1,2,16,False,7,12,0,2,2,2,2026-01-15,away,WM
- #1 J. Abreu,0,2,0,3,5,0,0,14,False,5,11,2,5,2,2,2026-01-15,away,WM
- #1 E. Rhyne,2,0,0,0,1,1,0,8,False,4,5,0,0,0,1,2026-01-15,away,WM
- #1 R. Messier,2,5,0,3,3,0,1,6,False,3,4,0,1,0,0,2026-01-15,away,WM
- #1 B. Rankin,2,2,0,1,1,1,0,5,False,1,2,0,1,3,4,2026-01-15,away,WM
- #1 C. Yinger,1,4,0,2,4,0,1,2,False,1,3,0,1,0,0,2026-01-15,away,WM
- #1 E. Dejesus,1,0,0,2,1,0,2,1,False,0,1,0,0,1,2,2026-01-15,away,WM
- #1 K. Johnson,0,1,0,0,1,1,0,0,False,0,1,0,0,0,0,2026-01-15,away,WM
- #1 N. Gabriel,0,1,0,1,1,0,1,0,False,0,2,0,1,0,0,2026-01-15,away,WM
- #1 H. Mollman,0,1,0,0,0,0,0,0,False,0,0,0,0,0,0,2026-01-15,away,WM
- #1 B. Novotny,0,0,0,0,2,0,0,0,False,0,0,0,0,0,0,2026-01-15,away,WM
- #1 G. Palazzo,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2026-01-15,away,WM
- #1 J. Constantine,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2026-01-15,away,WM
- #1 G. Tittle,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2026-01-15,away,WM
- #1 O. Arceo,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2026-01-15,away,WM
- #1 D. Harris,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2026-01-15,away,WM
- #1 C. Hall,0,4,0,2,2,1,1,16,False,7,24,0,2,2,5,2026-01-20,away,Century
- #1 R. Messier,4,3,0,3,1,0,1,15,False,6,10,2,3,1,2,2026-01-20,away,Century
- #1 E. Rhyne,5,1,0,0,2,0,0,5,False,2,4,0,0,1,2,2026-01-20,away,Century
- #1 B. Rankin,1,1,0,0,0,0,0,3,False,1,3,1,2,0,0,2026-01-20,away,Century
- #1 C. Yinger,3,1,0,2,1,0,1,2,False,1,6,0,4,0,0,2026-01-20,away,Century
- #1 E. Dejesus,0,0,0,1,0,0,0,2,False,1,5,0,3,0,0,2026-01-20,away,Century
- #1 K. Johnson,0,5,0,0,0,0,1,0,False,0,0,0,0,0,0,2026-01-20,away,Century
- #1 N. Gabriel,0,1,0,1,0,0,0,0,False,0,1,0,0,0,0,2026-01-20,away,Century
- #1 J. Abreu,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2026-01-20,away,Century
- #1 J. Constantine,0,1,0,0,0,0,0,0,False,0,0,0,0,0,0,2026-01-20,away,Century
- #1 G. Tittle,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2026-01-20,away,Century
- #1 B. Novotny,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2026-01-20,away,Century
- #1 O. Arceo,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2026-01-20,away,Century
- #1 G. Palazzo,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2026-01-20,away,Century
- #1 H. Mollman,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2026-01-20,away,Century
- #1 D. Harris,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2026-01-20,away,Century
- #1 C. Hall,0,1,0,4,0,1,4,14,False,4,9,2,4,4,4,2026-01-23,home,Liberty
- #1 E. Rhyne,5,0,0,0,0,0,0,13,False,5,8,0,0,3,6,2026-01-23,home,Liberty
- #1 C. Yinger,7,3,0,1,1,0,2,6,False,3,10,0,3,0,0,2026-01-23,home,Liberty
- #1 R. Messier,0,4,0,1,1,0,2,4,False,2,6,0,3,0,0,2026-01-23,home,Liberty
- #1 K. Johnson,2,1,0,0,1,2,0,4,False,1,2,0,0,2,3,2026-01-23,home,Liberty
- #1 J. Abreu,0,1,0,1,0,0,2,3,False,1,6,0,2,1,3,2026-01-23,home,Liberty
- #1 G. Tittle,0,0,0,0,0,0,0,3,False,1,4,1,4,0,0,2026-01-23,home,Liberty
- #1 B. Rankin,3,4,0,0,0,0,1,2,False,1,2,0,0,0,0,2026-01-23,home,Liberty
- #1 D. Harris,0,0,0,0,0,0,1,2,False,1,1,0,0,0,0,2026-01-23,home,Liberty
- #1 N. Gabriel,0,1,0,0,1,0,0,2,False,0,1,0,1,2,2,2026-01-23,home,Liberty
- #1 E. Dejesus,1,3,0,0,1,0,1,0,False,0,4,0,1,0,0,2026-01-23,home,Liberty
- #1 H. Mollman,2,0,0,0,0,0,0,0,False,0,1,0,0,0,0,2026-01-23,home,Liberty
- #1 J. Constantine,0,0,0,1,1,0,0,0,False,0,0,0,0,0,0,2026-01-23,home,Liberty
- #1 B. Novotny,0,0,0,1,0,0,0,0,False,0,2,0,1,0,0,2026-01-23,home,Liberty
- #1 G. Palazzo,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2026-01-23,home,Liberty
- #1 O. Arceo,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2026-01-23,home,Liberty
+ C. Hall,4,4,0,3,4,1,1,9,False,3,9,0,2,3,8,2025-12-05,away,GovThomasJohnson
+ J. Abreu,0,2,0,1,3,0,1,8,False,2,9,1,5,3,7,2025-12-05,away,GovThomasJohnson
+ C. Yinger,0,5,0,1,1,0,1,8,False,3,9,2,7,0,0,2025-12-05,away,GovThomasJohnson
+ E. Rhyne,1,2,0,0,0,0,1,5,False,2,4,0,0,1,1,2025-12-05,away,GovThomasJohnson
+ B. Rankin,1,3,0,0,2,0,0,4,False,1,2,0,0,2,2,2025-12-05,away,GovThomasJohnson
+ E. Dejesus,1,3,0,3,2,0,2,2,False,1,6,0,3,0,0,2025-12-05,away,GovThomasJohnson
+ K. Johnson,0,1,0,1,0,1,0,2,False,1,3,0,0,0,0,2025-12-05,away,GovThomasJohnson
+ R. Messier,0,3,0,0,4,0,1,0,False,0,1,0,1,0,0,2025-12-05,away,GovThomasJohnson
+ N. Gabriel,0,0,0,0,0,0,0,0,False,0,1,0,0,0,0,2025-12-05,away,GovThomasJohnson
+ H. Mollman,0,0,0,0,0,0,0,0,False,0,0,0,0,0,0,2025-12-05,away,GovThomasJohnson
+ J. Constantine,0,0,0,0,0,0,0,0,False,0,0,0,0,0,0,2025-12-05,away,GovThomasJohnson
+ G. Tittle,0,0,0,0,0,0,0,0,False,0,1,0,1,0,0,2025-12-05,away,GovThomasJohnson
+ G. Palazzo,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2025-12-05,away,GovThomasJohnson
+ B. Novotny,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2025-12-05,away,GovThomasJohnson
+ O. Arceo,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2025-12-05,away,GovThomasJohnson
+ D. Harris,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2025-12-05,away,GovThomasJohnson
+ J. Abreu,1,2,0,2,3,0,0,10,False,3,14,3,10,1,2,2025-12-09,home,Urbana
+ C. Hall,1,3,0,5,1,0,2,9,False,3,12,1,7,2,3,2025-12-09,home,Urbana
+ N. Gabriel,1,0,0,3,1,0,2,7,False,3,5,1,3,0,0,2025-12-09,home,Urbana
+ E. Rhyne,2,2,0,0,1,0,1,3,False,0,2,0,0,3,4,2025-12-09,home,Urbana
+ K. Johnson,1,0,0,0,0,0,0,2,False,1,1,0,0,0,0,2025-12-09,home,Urbana
+ B. Rankin,2,2,0,1,1,0,0,2,False,1,3,0,1,0,0,2025-12-09,home,Urbana
+ C. Yinger,0,2,0,4,1,0,1,2,False,1,4,0,3,0,0,2025-12-09,home,Urbana
+ E. Dejesus,1,0,0,1,0,0,1,0,False,0,4,0,3,0,0,2025-12-09,home,Urbana
+ O. Arceo,0,0,0,0,0,0,0,0,False,0,0,0,0,0,0,2025-12-09,home,Urbana
+ R. Messier,2,1,0,1,1,0,0,0,False,0,4,0,3,0,0,2025-12-09,home,Urbana
+ H. Mollman,0,0,0,0,0,0,0,0,False,0,0,0,0,0,0,2025-12-09,home,Urbana
+ B. Novotny,0,1,0,0,2,0,0,0,False,0,0,0,0,0,0,2025-12-09,home,Urbana
+ G. Tittle,0,0,0,0,1,0,0,0,False,0,1,0,1,0,0,2025-12-09,home,Urbana
+ G. Palazzo,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2025-12-09,home,Urbana
+ J. Constantine,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2025-12-09,home,Urbana
+ D. Harris,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2025-12-09,home,Urbana
+ C. Hall,7,3,0,0,1,0,1,11,False,5,14,1,4,0,2,2025-12-15,home,SC
+ J. Abreu,0,1,0,1,1,0,1,10,False,3,5,2,4,2,2,2025-12-15,home,SC
+ C. Yinger,3,3,0,2,2,1,3,6,False,2,6,0,1,2,2,2025-12-15,home,SC
+ B. Rankin,1,3,0,0,0,0,0,4,False,2,2,0,0,0,0,2025-12-15,home,SC
+ G. Tittle,0,1,0,0,0,0,0,3,False,1,3,1,3,0,0,2025-12-15,home,SC
+ H. Mollman,0,2,0,0,2,0,0,2,False,1,2,0,0,0,0,2025-12-15,home,SC
+ N. Gabriel,0,0,0,1,0,0,0,2,False,0,0,0,0,2,2,2025-12-15,home,SC
+ B. Novotny,1,1,0,0,2,0,0,2,False,1,3,0,0,0,0,2025-12-15,home,SC
+ E. Rhyne,1,2,0,2,1,1,0,2,False,1,3,0,0,0,2,2025-12-15,home,SC
+ K. Johnson,1,3,0,0,1,0,0,2,False,1,2,0,0,0,0,2025-12-15,home,SC
+ J. Constantine,1,0,0,1,1,0,0,2,False,1,2,0,0,0,0,2025-12-15,home,SC
+ D. Harris,0,2,0,0,1,0,0,0,False,0,1,0,1,0,0,2025-12-15,home,SC
+ O. Arceo,0,0,0,0,0,0,0,0,False,0,0,0,0,0,0,2025-12-15,home,SC
+ E. Dejesus,0,3,0,0,0,0,1,0,False,0,2,0,2,0,0,2025-12-15,home,SC
+ R. Messier,1,2,0,2,2,0,1,0,False,0,3,0,2,0,0,2025-12-15,home,SC
+ G. Palazzo,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2025-12-15,home,SC
+ J. Abreu,0,1,0,3,1,0,0,20,False,6,14,4,9,4,4,2025-12-17,home,Century
+ C. Hall,0,1,0,2,4,0,1,5,False,2,7,0,3,1,2,2025-12-17,home,Century
+ B. Rankin,3,1,0,0,1,0,0,4,False,1,2,0,0,2,2,2025-12-17,home,Century
+ C. Yinger,5,3,0,0,0,0,1,2,False,1,4,0,2,0,0,2025-12-17,home,Century
+ R. Messier,3,3,0,2,1,0,0,0,False,0,5,0,2,0,0,2025-12-17,home,Century
+ E. Dejesus,2,1,0,1,1,0,1,0,False,0,4,0,3,0,0,2025-12-17,home,Century
+ K. Johnson,0,1,0,0,0,0,0,0,False,0,1,0,0,0,0,2025-12-17,home,Century
+ H. Mollman,1,1,0,0,1,0,0,0,False,0,1,0,1,0,0,2025-12-17,home,Century
+ N. Gabriel,0,0,0,0,0,0,0,0,False,0,0,0,0,0,0,2025-12-17,home,Century
+ E. Rhyne,1,1,0,0,1,0,0,0,False,0,5,0,1,0,0,2025-12-17,home,Century
+ G. Tittle,0,1,0,0,1,0,0,0,False,0,0,0,0,0,0,2025-12-17,home,Century
+ O. Arceo,0,0,0,0,0,0,0,0,False,0,1,0,0,0,0,2025-12-17,home,Century
+ J. Constantine,0,0,0,0,0,0,0,0,False,0,0,0,0,0,0,2025-12-17,home,Century
+ D. Harris,0,0,0,0,0,0,0,0,False,0,0,0,0,0,0,2025-12-17,home,Century
+ B. Novotny,0,0,0,0,0,0,0,0,False,0,0,0,0,0,0,2025-12-17,home,Century
+ G. Palazzo,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2025-12-17,home,Century
+ C. Hall,1,3,0,2,2,1,2,16,False,6,13,3,4,1,2,2025-12-19,away,Liberty
+ E. Rhyne,0,4,0,0,2,0,2,7,False,3,4,0,0,1,2,2025-12-19,away,Liberty
+ C. Yinger,3,0,0,0,0,0,1,7,False,3,7,1,3,0,0,2025-12-19,away,Liberty
+ J. Abreu,1,1,0,2,0,0,4,5,False,2,9,1,4,0,0,2025-12-19,away,Liberty
+ E. Dejesus,1,0,0,1,2,0,0,5,False,1,5,1,4,2,4,2025-12-19,away,Liberty
+ K. Johnson,2,0,0,2,0,0,0,5,False,1,1,0,0,3,4,2025-12-19,away,Liberty
+ B. Rankin,3,3,0,2,0,1,0,3,False,1,5,0,1,1,3,2025-12-19,away,Liberty
+ R. Messier,2,3,0,0,1,0,0,2,False,1,2,0,0,0,5,2025-12-19,away,Liberty
+ N. Gabriel,0,0,0,0,0,0,1,2,False,0,0,0,0,2,2,2025-12-19,away,Liberty
+ H. Mollman,0,0,0,0,0,0,0,0,False,0,1,0,0,0,2,2025-12-19,away,Liberty
+ J. Constantine,0,0,0,0,0,0,0,0,False,0,0,0,0,0,0,2025-12-19,away,Liberty
+ D. Harris,0,0,0,0,0,0,0,0,False,0,0,0,0,0,0,2025-12-19,away,Liberty
+ B. Novotny,0,0,0,0,0,0,0,0,False,0,0,0,0,0,0,2025-12-19,away,Liberty
+ G. Tittle,0,0,0,0,0,0,0,0,False,0,0,0,0,0,0,2025-12-19,away,Liberty
+ G. Palazzo,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2025-12-19,away,Liberty
+ O. Arceo,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2025-12-19,away,Liberty
+ C. Hall,0,0,0,3,1,0,1,11,False,3,10,1,4,4,7,2025-12-29,away,WM
+ J. Abreu,0,2,0,1,3,0,2,7,False,3,9,1,5,0,0,2025-12-29,away,WM
+ B. Rankin,4,2,0,3,2,0,0,7,False,3,6,1,2,0,0,2025-12-29,away,WM
+ R. Messier,0,1,0,2,0,0,2,5,False,2,5,1,1,0,0,2025-12-29,away,WM
+ J. Constantine,4,1,0,0,0,0,0,4,False,2,5,0,0,0,2,2025-12-29,away,WM
+ C. Yinger,0,1,0,1,0,0,0,3,False,1,3,1,2,0,0,2025-12-29,away,WM
+ E. Rhyne,3,4,0,0,1,0,0,3,False,1,3,0,0,1,2,2025-12-29,away,WM
+ B. Novotny,2,1,0,0,1,0,0,2,False,1,5,0,0,0,0,2025-12-29,away,WM
+ H. Mollman,0,2,0,1,0,0,0,1,False,0,0,0,0,1,2,2025-12-29,away,WM
+ E. Dejesus,0,3,0,0,1,0,1,0,False,0,6,0,3,0,0,2025-12-29,away,WM
+ N. Gabriel,0,1,0,0,1,0,0,0,False,0,1,0,0,0,0,2025-12-29,away,WM
+ K. Johnson,0,0,0,0,0,0,2,0,False,0,2,0,0,0,0,2025-12-29,away,WM
+ G. Tittle,0,0,0,0,0,0,0,0,False,0,1,0,1,0,0,2025-12-29,away,WM
+ D. Harris,0,1,0,1,0,0,0,0,False,0,0,0,0,0,0,2025-12-29,away,WM
+ G. Palazzo,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2025-12-29,away,WM
+ O. Arceo,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2025-12-29,away,WM
+ C. Hall,0,3,0,6,4,0,0,15,False,2,11,1,8,10,12,2025-12-30,unknown,MV
+ C. Yinger,5,4,0,1,2,0,0,8,False,2,9,0,1,4,4,2025-12-30,unknown,MV
+ J. Abreu,1,0,0,0,1,0,6,6,False,2,13,0,7,2,4,2025-12-30,unknown,MV
+ E. Dejesus,2,1,0,1,0,0,1,3,False,1,3,1,2,0,0,2025-12-30,unknown,MV
+ H. Mollman,1,0,0,0,0,0,0,3,False,1,3,1,2,0,0,2025-12-30,unknown,MV
+ B. Rankin,2,3,0,1,2,0,0,2,False,1,4,0,0,0,0,2025-12-30,unknown,MV
+ R. Messier,0,2,0,1,1,0,0,2,False,1,3,0,2,0,0,2025-12-30,unknown,MV
+ N. Gabriel,1,0,0,0,0,0,0,0,False,0,3,0,3,0,0,2025-12-30,unknown,MV
+ E. Rhyne,3,2,0,0,1,2,0,0,False,0,0,0,0,0,0,2025-12-30,unknown,MV
+ J. Constantine,0,0,0,0,0,0,0,0,False,0,0,0,0,0,0,2025-12-30,unknown,MV
+ K. Johnson,0,1,0,0,0,0,0,0,False,0,0,0,0,0,0,2025-12-30,unknown,MV
+ G. Tittle,0,0,0,0,0,0,0,0,False,0,1,0,1,0,0,2025-12-30,unknown,MV
+ G. Palazzo,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2025-12-30,unknown,MV
+ B. Novotny,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2025-12-30,unknown,MV
+ O. Arceo,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2025-12-30,unknown,MV
+ D. Harris,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2025-12-30,unknown,MV
+ C. Hall,0,4,0,4,3,0,2,15,False,6,14,0,2,3,4,2026-01-09,home,MV
+ J. Abreu,2,3,0,4,4,0,3,13,False,6,18,1,5,0,3,2026-01-09,home,MV
+ C. Yinger,2,4,0,2,1,0,1,9,False,4,6,1,1,0,0,2026-01-09,home,MV
+ E. Rhyne,3,2,0,0,1,0,0,6,False,3,6,0,0,0,0,2026-01-09,home,MV
+ R. Messier,1,3,0,1,1,0,0,3,False,1,1,1,1,0,2,2026-01-09,home,MV
+ K. Johnson,2,2,0,1,0,0,1,2,False,0,1,0,0,2,6,2026-01-09,home,MV
+ J. Constantine,2,3,0,0,1,0,1,2,False,1,4,0,0,0,0,2026-01-09,home,MV
+ B. Rankin,4,1,0,0,1,0,0,1,False,0,3,0,2,1,2,2026-01-09,home,MV
+ E. Dejesus,2,0,0,0,0,0,3,0,False,0,4,0,2,0,0,2026-01-09,home,MV
+ N. Gabriel,0,1,0,2,1,0,2,0,False,0,1,0,0,0,0,2026-01-09,home,MV
+ H. Mollman,0,0,0,0,0,0,0,0,False,0,0,0,0,0,0,2026-01-09,home,MV
+ D. Harris,0,0,0,0,0,0,0,0,False,0,0,0,0,0,0,2026-01-09,home,MV
+ B. Novotny,1,0,0,0,0,0,0,0,False,0,0,0,0,0,0,2026-01-09,home,MV
+ G. Tittle,0,0,0,0,0,0,0,0,False,0,1,0,1,0,0,2026-01-09,home,MV
+ G. Palazzo,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2026-01-09,home,MV
+ O. Arceo,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2026-01-09,home,MV
+ C. Yinger,3,1,0,2,1,0,1,17,False,7,10,3,3,0,0,2026-01-12,home,FSK
+ E. Rhyne,3,3,0,1,1,0,1,12,False,6,8,0,0,0,1,2026-01-12,home,FSK
+ J. Abreu,0,3,0,0,1,0,3,9,False,3,7,3,6,0,0,2026-01-12,home,FSK
+ K. Johnson,1,1,0,4,2,0,1,6,False,3,4,0,0,0,0,2026-01-12,home,FSK
+ B. Rankin,2,1,0,2,0,1,0,6,False,3,5,0,2,0,1,2026-01-12,home,FSK
+ N. Gabriel,1,1,0,2,0,0,3,4,False,2,6,0,2,0,2,2026-01-12,home,FSK
+ C. Hall,0,6,0,0,1,0,1,3,False,1,6,1,2,0,0,2026-01-12,home,FSK
+ H. Mollman,0,0,0,0,0,0,0,2,False,1,1,0,0,0,0,2026-01-12,home,FSK
+ R. Messier,3,0,0,1,0,0,2,0,False,0,5,0,2,0,0,2026-01-12,home,FSK
+ E. Dejesus,1,3,0,0,1,0,2,0,False,0,3,0,2,0,0,2026-01-12,home,FSK
+ J. Constantine,2,1,0,2,2,0,0,0,False,0,1,0,1,0,0,2026-01-12,home,FSK
+ G. Tittle,0,0,0,1,0,0,0,0,False,0,3,0,2,0,0,2026-01-12,home,FSK
+ D. Harris,0,0,0,0,0,0,0,0,False,0,1,0,1,0,0,2026-01-12,home,FSK
+ B. Novotny,0,0,0,0,0,0,0,0,False,0,0,0,0,0,0,2026-01-12,home,FSK
+ G. Palazzo,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2026-01-12,home,FSK
+ O. Arceo,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2026-01-12,home,FSK
+ J. Abreu,1,0,0,0,0,0,1,14,False,5,8,4,7,0,1,2026-01-14,home,Gerstell
+ C. Hall,0,1,0,2,2,0,2,14,False,6,10,1,2,1,1,2026-01-14,home,Gerstell
+ N. Gabriel,1,1,0,1,0,0,0,8,False,3,6,2,3,0,0,2026-01-14,home,Gerstell
+ K. Johnson,1,3,0,2,0,0,6,8,False,4,8,0,0,0,0,2026-01-14,home,Gerstell
+ E. Dejesus,1,3,0,0,1,0,2,5,False,2,4,1,2,0,0,2026-01-14,home,Gerstell
+ D. Harris,1,2,0,0,4,0,1,4,False,2,4,0,0,0,0,2026-01-14,home,Gerstell
+ H. Mollman,1,1,0,0,0,0,0,4,False,2,3,0,0,0,0,2026-01-14,home,Gerstell
+ R. Messier,3,3,0,1,1,0,1,4,False,2,3,0,0,0,0,2026-01-14,home,Gerstell
+ B. Rankin,1,1,0,1,0,0,1,3,False,1,1,1,1,0,0,2026-01-14,home,Gerstell
+ G. Tittle,0,0,0,0,0,0,0,3,False,1,2,1,2,0,0,2026-01-14,home,Gerstell
+ C. Yinger,2,2,0,0,1,0,2,2,False,1,4,0,1,0,0,2026-01-14,home,Gerstell
+ E. Rhyne,4,3,0,1,1,1,1,0,False,0,2,0,0,0,0,2026-01-14,home,Gerstell
+ B. Novotny,1,6,0,0,2,0,0,0,False,0,1,0,0,0,0,2026-01-14,home,Gerstell
+ J. Constantine,3,1,0,1,1,0,0,0,False,0,5,0,1,0,0,2026-01-14,home,Gerstell
+ G. Palazzo,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2026-01-14,home,Gerstell
+ O. Arceo,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2026-01-14,home,Gerstell
+ C. Hall,0,1,0,6,4,1,2,16,False,7,12,0,2,2,2,2026-01-15,away,WM
+ J. Abreu,0,2,0,3,5,0,0,14,False,5,11,2,5,2,2,2026-01-15,away,WM
+ E. Rhyne,2,0,0,0,1,1,0,8,False,4,5,0,0,0,1,2026-01-15,away,WM
+ R. Messier,2,5,0,3,3,0,1,6,False,3,4,0,1,0,0,2026-01-15,away,WM
+ B. Rankin,2,2,0,1,1,1,0,5,False,1,2,0,1,3,4,2026-01-15,away,WM
+ C. Yinger,1,4,0,2,4,0,1,2,False,1,3,0,1,0,0,2026-01-15,away,WM
+ E. Dejesus,1,0,0,2,1,0,2,1,False,0,1,0,0,1,2,2026-01-15,away,WM
+ K. Johnson,0,1,0,0,1,1,0,0,False,0,1,0,0,0,0,2026-01-15,away,WM
+ N. Gabriel,0,1,0,1,1,0,1,0,False,0,2,0,1,0,0,2026-01-15,away,WM
+ H. Mollman,0,1,0,0,0,0,0,0,False,0,0,0,0,0,0,2026-01-15,away,WM
+ B. Novotny,0,0,0,0,2,0,0,0,False,0,0,0,0,0,0,2026-01-15,away,WM
+ G. Palazzo,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2026-01-15,away,WM
+ J. Constantine,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2026-01-15,away,WM
+ G. Tittle,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2026-01-15,away,WM
+ O. Arceo,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2026-01-15,away,WM
+ D. Harris,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2026-01-15,away,WM
+ C. Hall,0,4,0,2,2,1,1,16,False,7,24,0,2,2,5,2026-01-20,away,Century
+ R. Messier,4,3,0,3,1,0,1,15,False,6,10,2,3,1,2,2026-01-20,away,Century
+ E. Rhyne,5,1,0,0,2,0,0,5,False,2,4,0,0,1,2,2026-01-20,away,Century
+ B. Rankin,1,1,0,0,0,0,0,3,False,1,3,1,2,0,0,2026-01-20,away,Century
+ C. Yinger,3,1,0,2,1,0,1,2,False,1,6,0,4,0,0,2026-01-20,away,Century
+ E. Dejesus,0,0,0,1,0,0,0,2,False,1,5,0,3,0,0,2026-01-20,away,Century
+ K. Johnson,0,5,0,0,0,0,1,0,False,0,0,0,0,0,0,2026-01-20,away,Century
+ N. Gabriel,0,1,0,1,0,0,0,0,False,0,1,0,0,0,0,2026-01-20,away,Century
+ J. Abreu,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2026-01-20,away,Century
+ J. Constantine,0,1,0,0,0,0,0,0,False,0,0,0,0,0,0,2026-01-20,away,Century
+ G. Tittle,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2026-01-20,away,Century
+ B. Novotny,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2026-01-20,away,Century
+ O. Arceo,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2026-01-20,away,Century
+ G. Palazzo,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2026-01-20,away,Century
+ H. Mollman,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2026-01-20,away,Century
+ D. Harris,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2026-01-20,away,Century
+ C. Hall,0,1,0,4,0,1,4,14,False,4,9,2,4,4,4,2026-01-23,home,Liberty
+ E. Rhyne,5,0,0,0,0,0,0,13,False,5,8,0,0,3,6,2026-01-23,home,Liberty
+ C. Yinger,7,3,0,1,1,0,2,6,False,3,10,0,3,0,0,2026-01-23,home,Liberty
+ R. Messier,0,4,0,1,1,0,2,4,False,2,6,0,3,0,0,2026-01-23,home,Liberty
+ K. Johnson,2,1,0,0,1,2,0,4,False,1,2,0,0,2,3,2026-01-23,home,Liberty
+ J. Abreu,0,1,0,1,0,0,2,3,False,1,6,0,2,1,3,2026-01-23,home,Liberty
+ G. Tittle,0,0,0,0,0,0,0,3,False,1,4,1,4,0,0,2026-01-23,home,Liberty
+ B. Rankin,3,4,0,0,0,0,1,2,False,1,2,0,0,0,0,2026-01-23,home,Liberty
+ D. Harris,0,0,0,0,0,0,1,2,False,1,1,0,0,0,0,2026-01-23,home,Liberty
+ N. Gabriel,0,1,0,0,1,0,0,2,False,0,1,0,1,2,2,2026-01-23,home,Liberty
+ E. Dejesus,1,3,0,0,1,0,1,0,False,0,4,0,1,0,0,2026-01-23,home,Liberty
+ H. Mollman,2,0,0,0,0,0,0,0,False,0,1,0,0,0,0,2026-01-23,home,Liberty
+ J. Constantine,0,0,0,1,1,0,0,0,False,0,0,0,0,0,0,2026-01-23,home,Liberty
+ B. Novotny,0,0,0,1,0,0,0,0,False,0,2,0,1,0,0,2026-01-23,home,Liberty
+ G. Palazzo,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2026-01-23,home,Liberty
+ O. Arceo,0,0,0,0,0,0,0,0,True,0,0,0,0,0,0,2026-01-23,home,Liberty

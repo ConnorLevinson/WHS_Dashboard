@@ -80,27 +80,27 @@ st.subheader("Team Per-Game Stats")
 st.dataframe(team_per_game_display)
 
 # ---------------- ALL PLAYERS CHART ----------------
-st.subheader("All Players – Points Per Game")
+# st.subheader("All Players – Points Per Game")
 
-per_game = df.groupby(["player", "game_date"], as_index=False).sum(numeric_only=True)
-per_game["player_avg"] = per_game.groupby("player")["pts"].transform("mean")
+# per_game = df.groupby(["player", "game_date"], as_index=False).sum(numeric_only=True)
+# per_game["player_avg"] = per_game.groupby("player")["pts"].transform("mean")
 
-# Round points for chart
-per_game["pts"] = per_game["pts"].round(1)
-per_game["player_avg"] = per_game["player_avg"].round(1)
+# # Round points for chart
+# per_game["pts"] = per_game["pts"].round(1)
+# per_game["player_avg"] = per_game["player_avg"].round(1)
 
-chart = alt.Chart(per_game).mark_line(point=True).encode(
-    x=alt.X("game_date:T", title="Game"),
-    y=alt.Y("pts:Q", title="Points"),
-    color=alt.Color("player:N", title="Player"),
-    tooltip=["player", "pts"]
-).properties(height=400)
+# chart = alt.Chart(per_game).mark_line(point=True).encode(
+# x=alt.X("game_date:T", title="Game"),
+# y=alt.Y("pts:Q", title="Points"),
+# color=alt.Color("player:N", title="Player"),
+# tooltip=["player", "pts"]
+# ).properties(height=400)
 
-avg_lines = alt.Chart(
-    per_game.groupby("player", as_index=False)["player_avg"].mean()
-).mark_rule(strokeDash=[4, 4]).encode(
-    y="player_avg:Q",
-    color="player:N"
-)
+# avg_lines = alt.Chart(
+# per_game.groupby("player", as_index=False)["player_avg"].mean()
+# ).mark_rule(strokeDash=[4, 4]).encode(
+# y="player_avg:Q",
+# color="player:N"
+# )
 
 st.altair_chart(chart + avg_lines, width='stretch')
