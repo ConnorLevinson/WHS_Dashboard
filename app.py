@@ -1,139 +1,106 @@
 import streamlit as st
 import pandas as pd
+import altair as alt
 
-# --------------------------------------------------
-# PAGE SETUP
-# --------------------------------------------------
-st.set_page_config(page_title="Team Dashboard", layout="wide")
-st.title("🏀 Team Analytics Dashboard")
-st.caption("Season Team Overview")
+st.set_page_config(page_title="JV Basketball – Team Dashboard", layout="wide")
 
-# --------------------------------------------------
-# LOAD & CLEAN DATA
-# --------------------------------------------------
-df = pd.read_csv("data/player_box_scores.csv")
+@st.cache_data
+def load_data():
+    return pd.read_csv("all_games_master.csv", parse_dates=["game_date"])
 
-numeric_cols = [
-    "fgm", "fga", "tpm", "tpa", "ftm", "fta",
-    "oreb", "dreb", "ast", "stl", "blk",
-    "tov", "foul", "pts"
-]
+df = load_data()
 
-for col in numeric_cols:
-    df[col] = pd.to_numeric(df[col], errors="coerce").fillna(0)
+# ---------------- BASIC CALCS ----------------
+df["reb"] = df.get("oreb", 0) + df.get("dreb", 0)
+played_df = df[~df["dnp"]]  # exclude DNPs for per-player stats
 
-df["reb"] = df["oreb"] + df["dreb"]
+# ---------------- PLAYER PER-GAME STATS ----------------
+games_played = played_df.groupby("player")["game_date"].nunique()
+player_totals = played_df.groupby("player").sum(numeric_only=True)
 
-# --------------------------------------------------
-# TEAM TOTALS PER GAME
-# --------------------------------------------------
-team_games = (
-    df.groupby(
-        ["game_id", "date", "opponent", "location"],
-        as_index=False
-    )
-    .agg({
-        "pts": "sum",
-        "fgm": "sum",
-        "fga": "sum",
-        "tpm": "sum",
-        "tpa": "sum",
-        "oreb": "sum",
-        "dreb": "sum",
-        "ast": "sum",
-        "tov": "sum"
-    })
+# Calculate per-game stats
+player_per_game = pd.DataFrame({
+    "GP": games_played,
+    "PPG": (player_totals["pts"] / games_played).round(1),
+    "RPG": (player_totals["reb"] / games_played).round(1),
+    "APG": (player_totals["asst"] / games_played).round(1),
+    "SPG": (player_totals["stl"] / games_played).round(1),
+    "BPG": (player_totals["blk"] / games_played).round(1),
+    "TOPG": (player_totals["to"] / games_played).round(1),
+    "FG%": (player_totals["fgm"] / player_totals["fga"]),
+    "3PT%": (player_totals["3pm"] / player_totals["3pa"]),
+    "FT%": (player_totals["ftm"] / player_totals["fta"]),
+})
+
+player_per_game = player_per_game.sort_values("PPG", ascending=False)
+
+# Pre-format numbers for display (strings) to force 1 decimal
+def format_number(val):
+    return f"{val:.1f}"
+
+def format_percent(val):
+    return f"{val*100:.1f}%"
+
+player_per_game_display = player_per_game.copy()
+for col in ["PPG", "RPG", "APG", "SPG", "BPG", "TOPG", "GP"]:
+    player_per_game_display[col] = player_per_game_display[col].apply(format_number)
+
+for col in ["FG%", "3PT%", "FT%"]:
+    player_per_game_display[col] = player_per_game_display[col].apply(format_percent)
+
+# ---------------- TEAM PER-GAME STATS ----------------
+team_games = df["game_date"].nunique()
+team_per_game = pd.DataFrame({
+    "PTS/G": round(df["pts"].sum() / team_games, 1),
+    "REB/G": round(df["reb"].sum() / team_games, 1),
+    "AST/G": round(df["asst"].sum() / team_games, 1),
+    "STL/G": round(df["stl"].sum() / team_games, 1),
+    "BLK/G": round(df["blk"].sum() / team_games, 1),
+    "TO/G": round(df["to"].sum() / team_games, 1),
+    "FG%": df["fgm"].sum() / df["fga"].sum(),
+    "3PT%": df["3pm"].sum() / df["3pa"].sum(),
+    "FT%": df["ftm"].sum() / df["fta"].sum(),
+}, index=["Team"])
+
+team_per_game_display = team_per_game.copy()
+for col in ["PTS/G", "REB/G", "AST/G", "STL/G", "BLK/G", "TO/G"]:
+    team_per_game_display[col] = team_per_game_display[col].apply(format_number)
+for col in ["FG%", "3PT%", "FT%"]:
+    team_per_game_display[col] = team_per_game_display[col].apply(format_percent)
+
+# ---------------- HEADER ----------------
+st.title("JV Basketball – Team Dashboard")
+
+# ---------------- PLAYER TABLE ----------------
+st.subheader("Player Per-Game Averages")
+st.dataframe(player_per_game_display)
+
+# ---------------- TEAM TABLE ----------------
+st.subheader("Team Per-Game Stats")
+st.dataframe(team_per_game_display)
+
+# ---------------- ALL PLAYERS CHART ----------------
+st.subheader("All Players – Points Per Game")
+
+per_game = df.groupby(["player", "game_date"], as_index=False).sum(numeric_only=True)
+per_game["player_avg"] = per_game.groupby("player")["pts"].transform("mean")
+
+# Round points for chart
+per_game["pts"] = per_game["pts"].round(1)
+per_game["player_avg"] = per_game["player_avg"].round(1)
+
+chart = alt.Chart(per_game).mark_line(point=True).encode(
+    x=alt.X("game_date:T", title="Game"),
+    y=alt.Y("pts:Q", title="Points"),
+    color=alt.Color("player:N", title="Player"),
+    tooltip=["player", "pts"]
+).properties(height=400)
+
+avg_lines = alt.Chart(
+    per_game.groupby("player", as_index=False)["player_avg"].mean()
+).mark_rule(strokeDash=[4, 4]).encode(
+    y="player_avg:Q",
+    color="player:N"
 )
 
-team_games["date"] = pd.to_datetime(team_games["date"])
-
-# Create readable game label (prevents opponent merging)
-team_games["game_label"] = (
-    team_games["date"].dt.strftime("%m/%d")
-    + " "
-    + team_games["location"].map({"H": "vs", "A": "@"}).fillna("vs")
-    + " "
-    + team_games["opponent"]
-)
-
-games_played = len(team_games)
-
-# --------------------------------------------------
-# PER-GAME METRICS
-# --------------------------------------------------
-ppg = team_games["pts"].mean()
-oreb_pg = team_games["oreb"].mean()
-dreb_pg = team_games["dreb"].mean()
-ast_pg = team_games["ast"].mean()
-tov_pg = team_games["tov"].mean()
-fga_pg = team_games["fga"].mean()
-tpa_pg = team_games["tpa"].mean()
-
-fg_pct = team_games["fgm"].sum() / team_games["fga"].sum()
-tp_pct = team_games["tpm"].sum() / team_games["tpa"].sum()
-
-# --------------------------------------------------
-# METRICS DISPLAY
-# --------------------------------------------------
-st.subheader("📊 Team Per-Game Profile")
-
-row1 = st.columns(5)
-row1[0].metric("PPG", round(ppg, 1))
-row1[1].metric("OREB / G", round(oreb_pg, 1))
-row1[2].metric("DREB / G", round(dreb_pg, 1))
-row1[3].metric("AST / G", round(ast_pg, 1))
-row1[4].metric("TOV / G", round(tov_pg, 1))
-
-row2 = st.columns(5)
-row2[0].metric("FG%", f"{fg_pct:.1%}")
-row2[1].metric("3PT FG%", f"{tp_pct:.1%}")
-row2[2].metric("FGA / G", round(fga_pg, 1))
-row2[3].metric("3PA / G", round(tpa_pg, 1))
-row2[4].metric("Games", games_played)
-
-# --------------------------------------------------
-# GAME FILTER
-# --------------------------------------------------
-st.subheader("📅 Game Filter")
-
-last_n = st.slider(
-    "Show last N games",
-    min_value=1,
-    max_value=games_played,
-    value=games_played
-)
-
-filtered_games = (
-    team_games
-    .sort_values("date")
-    .tail(last_n)
-)
-
-# --------------------------------------------------
-# CHARTS
-# --------------------------------------------------
-st.subheader("📈 Performance by Game")
-
-# Points by Game
-st.markdown("**Points Scored**")
-st.bar_chart(
-    filtered_games.set_index("game_label")["pts"]
-)
-
-# Turnovers by Game
-st.markdown("**Turnovers**")
-st.bar_chart(
-    filtered_games.set_index("game_label")["tov"]
-)
-
-# Rebounds by Game
-st.markdown("**Rebounds (Offensive / Defensive)**")
-st.bar_chart(
-    filtered_games.set_index("game_label")[["oreb", "dreb"]]
-)
-
-# Shot Volume Trend
-st.subheader("🎯 Shot Volume Trend")
-st.line_chart(
-    filtered_games.set_index("game_label")[["fga", "tpa"]]
-)
+st.altair_chart(chart + avg_lines, width='stretch')
