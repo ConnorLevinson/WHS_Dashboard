@@ -20,7 +20,7 @@ def parse_filename(filename):
     loc_map = {
         "vs": "home",
         "at": "away",
-        "neutral": "neutral"
+        "n": "neutral"
     }
     location = loc_map.get(parts[1], "unknown")
 
