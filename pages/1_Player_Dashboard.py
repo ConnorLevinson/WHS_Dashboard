@@ -15,10 +15,14 @@ df = load_data()
 # ---------------- SIDEBAR ----------------
 st.sidebar.title("Player")
 
+total_points = df.groupby("player")["pts"].sum()
+player_order = total_points.sort_values(ascending=False).index.tolist()
+
 player = st.sidebar.selectbox(
     "Select Player",
-    sorted(df["player"].unique())
+    player_order
 )
+
 
 pdf = df[df["player"] == player].sort_values("game_date")
 
