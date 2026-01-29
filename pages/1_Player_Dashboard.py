@@ -12,17 +12,25 @@ def load_data():
 
 df = load_data()
 
-# ---------------- SIDEBAR ----------------
-st.sidebar.title("Player")
+# ---------------- PLAYER SELECT (INLINE) ----------------
 
 total_points = df.groupby("player")["pts"].sum()
 player_order = total_points.sort_values(ascending=False).index.tolist()
 
-player = st.sidebar.selectbox(
-    "Select Player",
-    player_order
-)
+col1, col2 = st.columns([3, 1])
 
+with col1:
+    player = st.selectbox(
+        "Player",
+        player_order,
+        label_visibility="collapsed"
+    )
+
+with col2:
+    st.markdown(
+        "<div style='text-align:right; color:gray; padding-top:0.6rem;'>Select player</div>",
+        unsafe_allow_html=True
+    )
 
 pdf = df[df["player"] == player].sort_values("game_date")
 
