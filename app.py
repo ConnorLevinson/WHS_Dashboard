@@ -35,6 +35,48 @@ played_df = df[~df["dnp"]]  # exclude DNPs for per-player stats
 games_played = played_df.groupby("player")["game_date"].nunique()
 player_totals = played_df.groupby("player").sum(numeric_only=True)
 
+def vps_calculation(df):
+    missed_fg = df["fga"] - df["fgm"]
+    missed_ft = df["fta"] - df["ftm"]
+    turnovers = df["to"]
+
+    numerator = (
+        df["pts"] +
+        df["reb"] +
+        2 * (df["stl"] + df["blk"] + df["asst"])
+    )
+
+    denominator = (
+        2 * missed_fg +
+        missed_ft +
+        2 * turnovers
+    )
+
+    vps = numerator / denominator.replace(0, pd.NA)
+    return vps
+
+def efg_calculation(df):
+    return (df["fgm"] + 0.5 * df["3pm"]) / df["fga"].replace(0, pd.NA)
+
+def ts_calculation(df):
+    return df["pts"] / (2 * (df["fga"] + 0.44 * df["fta"]).replace(0, pd.NA))
+
+def to_rate_calculation(df):
+    return df["to"] / (df["fga"] + 0.44 * df["fta"] + df["to"]).replace(0, pd.NA)
+
+def efficiency_calculation(df):
+    return (
+        df["pts"]
+        + df["reb"]
+        + df["asst"]
+        + df["stl"]
+        + df["blk"]
+        - (df["fga"] - df["fgm"])
+        - (df["fta"] - df["ftm"])
+        - df["to"]
+    )
+
+
 player_per_game = pd.DataFrame({
     "GP": games_played,
     "PPG": (player_totals["pts"] / games_played).round(1),
@@ -46,6 +88,12 @@ player_per_game = pd.DataFrame({
     "FG%": player_totals["fgm"] / player_totals["fga"],
     "3PT%": player_totals["3pm"] / player_totals["3pa"],
     "FT%": player_totals["ftm"] / player_totals["fta"],
+    "VPS": vps_calculation(player_totals),
+    "eFG%": efg_calculation(player_totals),
+    "TS%": ts_calculation(player_totals),
+    "TO Rate": to_rate_calculation(player_totals),
+    "EFF": efficiency_calculation(player_totals) / games_played
+
 }).sort_values("PPG", ascending=False)
 
 # ---------------- FORMAT HELPERS ----------------
@@ -57,10 +105,10 @@ def format_percent(val):
 
 player_per_game_display = player_per_game.copy()
 
-for col in ["PPG", "RPG", "APG", "SPG", "BPG", "TOPG", "GP"]:
+for col in ["PPG", "RPG", "APG", "SPG", "BPG", "TOPG", "GP", "VPS", "EFF"]:
     player_per_game_display[col] = player_per_game_display[col].apply(format_number)
 
-for col in ["FG%", "3PT%", "FT%"]:
+for col in ["FG%", "3PT%", "FT%", "eFG%", "TS%", "TO Rate"]:
     player_per_game_display[col] = player_per_game_display[col].apply(format_percent)
 
 # ---------------- TEAM PER-GAME STATS ----------------
