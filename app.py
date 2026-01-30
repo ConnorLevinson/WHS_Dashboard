@@ -147,33 +147,6 @@ player_pg = pd.DataFrame({
     "FT%": player_totals["ftm"] / player_totals["fta"]
 }).sort_values("PPG", ascending=False)
 
-# ---------------- SHOT DISTRIBUTION ----------------
-shot_df = (
-    played_df
-    .groupby("player")[["fgm", "fga"]]
-    .sum()
-    .sort_values("fga", ascending=False)
-)
-
-top = shot_df.head(10)
-other = shot_df.iloc[10:]
-
-labels = [f"{p} — {int(r.fgm)}/{int(r.fga)}" for p, r in top.iterrows()]
-sizes = top["fga"].tolist()
-
-if not other.empty:
-    labels.append(f"Other — {int(other.fgm.sum())}/{int(other.fga.sum())}")
-    sizes.append(other["fga"].sum())
-
-fig, ax = plt.subplots(figsize=(6, 6))
-ax.pie(
-    sizes,
-    labels=labels,
-    startangle=90,
-    counterclock=False,
-    wedgeprops={"edgecolor": "white"}
-)
-
 # ---------------- PAGE ----------------
 st.title("JV Basketball – Team Dashboard")
 st.subheader(f"Team Record: {wins}-{losses}-{ties}")
@@ -219,5 +192,67 @@ st.dataframe(
     .format("{:.1%}", subset=["FG%","3PT%","FT%"])
 )
 
-st.subheader("Shot Distribution (Season)")
-st.pyplot(fig)
+# ---------------- GAME LOG ----------------
+game_log_df = (
+    df
+    .groupby(["game_date", "opponent", "location"])
+    .agg({
+        # Team stats
+        "pts": "sum",
+        "reb": "sum",
+        "asst": "sum",
+        "stl": "sum",
+        "blk": "sum",
+        "to": "sum",
+        "fgm": "sum",
+        "fga": "sum",
+        "3pm": "sum",
+        "3pa": "sum",
+        "ftm": "sum",
+        "fta": "sum",
+        # Opponent stats
+        "opp_fgm": "first",
+        "opp_fga": "first",
+        "opp_3pm": "first",
+        "opp_3pa": "first",
+        "opp_ftm": "first",
+        "opp_fta": "first",
+        "opp_reb": "first",
+        "opp_to": "first",
+        # Result
+        "result": "first"
+    })
+    .reset_index()
+)
+
+# Team shooting percentages
+game_log_df["FG%"] = game_log_df["fgm"] / game_log_df["fga"]
+game_log_df["3PT%"] = game_log_df["3pm"] / game_log_df["3pa"]
+game_log_df["FT%"] = game_log_df["ftm"] / game_log_df["fta"]
+
+# Opponent points
+game_log_df["Opp PTS"] = (
+    game_log_df["opp_fgm"] * 2 +
+    game_log_df["opp_3pm"] +
+    game_log_df["opp_ftm"]
+)
+game_log_df["Opp FG%"] = game_log_df["opp_fgm"] / game_log_df["opp_fga"]
+game_log_df["Opp 3PT%"] = game_log_df["opp_3pm"] / game_log_df["opp_3pa"]
+game_log_df["Opp FT%"] = game_log_df["opp_ftm"] / game_log_df["opp_fta"]
+
+# Optional: reorder columns for readability
+game_log_df = game_log_df[[
+    "opponent", "location", "result",
+    "pts", "reb", "asst", "stl", "blk", "to", "FG%", "3PT%", "FT%",
+    "Opp PTS", "opp_reb", "opp_to", "Opp FG%", "Opp 3PT%", "Opp FT%"
+]]
+
+game_log_df = game_log_df[::-1]
+game_log_df.index +=1
+# ---------------- DISPLAY IN STREAMLIT ----------------
+st.subheader("Game Log — Team vs Opponent Stats")
+st.dataframe(
+    game_log_df.style
+    .format("{:.1f}", subset=["pts","reb","asst","stl","blk","to","opp_reb","opp_to","Opp PTS"])
+    .format("{:.1%}", subset=["FG%","3PT%","FT%","Opp FG%","Opp 3PT%","Opp FT%"])
+)
