@@ -144,7 +144,9 @@ player_pg = pd.DataFrame({
     "TOPG": player_totals["to"] / games_played,
     "FG%": player_totals["fgm"] / player_totals["fga"],
     "3PT%": player_totals["3pm"] / player_totals["3pa"],
-    "FT%": player_totals["ftm"] / player_totals["fta"]
+    "FT%": player_totals["ftm"] / player_totals["fta"],
+    "eFG%": (player_totals["fgm"] + 0.5 * player_totals["3pm"])/ player_totals["fga"],
+
 }).sort_values("PPG", ascending=False)
 
 # ---------------- PAGE ----------------
@@ -158,38 +160,11 @@ st.dataframe(
     .format("{:.1%}", subset=["FG%", "3PT%", "FT%"])
 )
 
-st.subheader("Team Stats — Wins vs Losses")
-st.dataframe(
-    wl_team[["pts","reb","asst","to","FG%","3PT%","FT%"]]
-    .rename(columns={
-        "pts":"PTS/G",
-        "reb":"REB/G",
-        "asst":"AST/G",
-        "to":"TO/G"
-    })
-    .style
-    .format("{:.1f}", subset=["PTS/G","REB/G","AST/G","TO/G"])
-    .format("{:.1%}", subset=["FG%","3PT%","FT%"])
-)
-
-st.subheader("Opponent Stats — Wins vs Losses")
-st.dataframe(
-    wl_opp[["Opp PTS","opp_reb","opp_to","Opp FG%","Opp 3PT%","Opp FT%"]]
-    .rename(columns={
-        "Opp PTS":"Opp PTS/G",
-        "opp_reb":"Opp REB/G",
-        "opp_to":"Opp TO/G"
-    })
-    .style
-    .format("{:.1f}", subset=["Opp PTS/G","Opp REB/G","Opp TO/G"])
-    .format("{:.1%}", subset=["Opp FG%","Opp 3PT%","Opp FT%"])
-)
-
 st.subheader("Player Per-Game Averages")
 st.dataframe(
     player_pg.style
     .format("{:.1f}", subset=player_pg.columns[:7])
-    .format("{:.1%}", subset=["FG%","3PT%","FT%"])
+    .format("{:.1%}", subset=["FG%","3PT%","FT%","eFG%"])
 )
 
 # ---------------- GAME LOG ----------------
@@ -255,4 +230,31 @@ st.dataframe(
     game_log_df.style
     .format("{:.1f}", subset=["pts","reb","asst","stl","blk","to","opp_reb","opp_to","Opp PTS"])
     .format("{:.1%}", subset=["FG%","3PT%","FT%","Opp FG%","Opp 3PT%","Opp FT%"])
+)
+
+st.subheader("Team Stats — Wins vs Losses")
+st.dataframe(
+    wl_team[["pts","reb","asst","to","FG%","3PT%","FT%"]]
+    .rename(columns={
+        "pts":"PTS/G",
+        "reb":"REB/G",
+        "asst":"AST/G",
+        "to":"TO/G"
+    })
+    .style
+    .format("{:.1f}", subset=["PTS/G","REB/G","AST/G","TO/G"])
+    .format("{:.1%}", subset=["FG%","3PT%","FT%"])
+)
+
+st.subheader("Opponent Stats — Wins vs Losses")
+st.dataframe(
+    wl_opp[["Opp PTS","opp_reb","opp_to","Opp FG%","Opp 3PT%","Opp FT%"]]
+    .rename(columns={
+        "Opp PTS":"Opp PTS/G",
+        "opp_reb":"Opp REB/G",
+        "opp_to":"Opp TO/G"
+    })
+    .style
+    .format("{:.1f}", subset=["Opp PTS/G","Opp REB/G","Opp TO/G"])
+    .format("{:.1%}", subset=["Opp FG%","Opp 3PT%","Opp FT%"])
 )
